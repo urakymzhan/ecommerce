@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/b371a74668.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+<!--    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
+
+        <!-- NOTE: Bootstrap 4 removed glyphicons  -->
+        <!-- Using older version of font awesome. Using newer is failing for pencil and other icons. Fix it later -->
+</head>
+
+<body>
+<div class="header">
+    <div class="top">
+        <button type="button" class="btn btn-outline-secondary">
+            <!-- <i class="fas fa-pencil-alt"></i> -->
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            My Wishlist(0)
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            My Account
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Shopping Cart
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            Checkout
+        </button>
+    </div>
+    <div class="header-right" style="color: grey">Welcome visitor you can <!-- fix this styles-->
+        <span><a href="#" style="color: green">login</a></span> or
+        <span><a href="#" style="color: green; margin-right: 0.3rem">create an account</a></span>
+
+        <button type="button" class="btn btn-success">US Dollar</button>
+        <button type="button" class="btn btn-success">
+            <i class="fa fa-flag"></i>
+            Engish</button>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav1">
+        <div class="logo">
+            <img class="venedor" src="http://venedor.promokit.eu/img/venedor-1407440115-1.jpg">
+        </div>
+        <div class="nav-contact">
+            <button type="button" class="btn btn-default" style="padding: 10px">
+                <i class="fa fa-phone" style="font-size:20px;color:green; margin-right: 3px;" ></i>
+                +(404) 158 14 25 78
+            </button>
+            <button type="button" class="btn btn-default" style="padding: 10px">
+                <i class="fa fa-envelope" style="font-size:20px; color:green; margin-right: 3px;"></i>
+                user@vendeor.com
+            </button>
+        </div>
+    </div>
+</div>
+<div class="nav2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">FASHION </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ELECTRONICS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">GIFTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BOOKS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOME</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">MUSIC</a>
+      </li>     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    O item(s) - $0.00
+      </button>
+    </form>
+  </div>
+</nav>
+</div>
+<div class="center">
+    <div id="img-wrapper">
+        <img src="http://3dvision-blog.com/wp-content/uploads/2012/02/lg_optimus_3d_max.jpg" width="400px" height="250px"> <!--add shadow ot it-->
+    </div>
+    <div id="content">
+        <h1>Mobile</h1><br>
+        <p>Venedor has been the industry's standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type<br>
+            specimen book. It has survived not only five centuries, but also the leap into<br>
+            electronic typesetting, remaining essentially unchanged.</p><br>
+        <button type="button" class="btn btn-success">LEARN MORE</button>
+    </div>
+</div>
+
+<div class="main">
+    <div class="contents">
+ <!--          <div class="home">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#" style="color: black">Home</a></li>
+                <li role="presentation"><a href="#" style="color: black">Electronics</a></li>
+                <li role="presentation"><a href="#" style="color: black">Mobile</a></li>
+            </ul>
+        </div> -->
+        <div class="menu">
+            <div id="compare" >
+                <button id="btn btn-primary" type="submit"> Compare </button>
+            </div>
+
+            <div id="sort">
+                <h6>Sort by:</h6>
+            </div>
+            <div class="dropdown" >
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                Default
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Price</a>
+                <a class="dropdown-item" href="#">Popularity</a>
+                <a class="dropdown-item" href="#">Other</a>
+              </div>
+            </div>
+
+            <div id="thlarge">
+                <button type="button" class="btn btn-default btn-lg">
+                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div id="thlist">
+                <button type="button" class="btn btn-default btn-lg">
+                    <i class="fa fa-th-list" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div id="view">
+                <h6>View:</h6>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Default
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Color</a>
+                <a class="dropdown-item" href="#">Size</a>
+                <a class="dropdown-item" href="#">Other</a>
+              </div>
+            </div>
+
+            <div id="pagination">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" >1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product" id="cameraholder">
+                <img src="https://cdn11.bigcommerce.com/s-8r6v4k9u76/images/stencil/1280x1280/products/243/620/019PB03-1__01589.1537240703.jpg?c=2?imbypass=on" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>Camera Holder</h3>
+                <div class="label">$40</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="samsung">
+                <img src="http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-j3-2017r1.jpg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>SAMSUNG</h3>
+                <div class="label">$435</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="case">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/e9/44/10/e9441042b7169baca3687c18dc3f70fc.jpg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>iPhone Case</h3>
+                <div class="discount">-25%</div>
+                <div class="label">$35</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="desktop">
+                <img src="https://i5.walmartimages.com/asr/3769958a-9662-47ea-b822-fb04bb4159a0_1.067d9c2d9f9c678c1fc2370874b56218.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>Power Mac Desktop</h3>
+                <div class="new">NEW</div>
+                <div class="label">$290</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="webcam">
+                <img src="https://assets.logitech.com/assets/55370/hd-webcam-c310-gallery.png" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>WebCam</h3>
+                <div class="label">
+                     <del style="color: black">$179</del><br>
+                     $100
+                </div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="nespresso">
+                <img src="http://target.scene7.com/is/image/Target/51472687?wid=520&hei=520&fmt=pjpeg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>Nespresso</h3>
+                <div class="label">$299</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="laptop">
+                <img src="https://static.bhphoto.com/images/images500x500/vaio_vjs131x0111b_13_3_s_notebook_1456348814000_1226639.jpg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>VAIO Laptop</h3>
+                <div class="label">$1399</div>
+                <button type="button" class="btn btn-success" style="width: 130px">VIEW</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="benQ">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41ixEiNfs%2BL.jpg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>BenQ</h3>
+                <div class="discount">-30%</div>
+                <div class="label">$169</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="digitalcamera">
+                <img src="https://cnet2.cbsistatic.com/img/jOB0zvRQ8EzbyPQcFEs5dkgxi-M=/830x467/2010/08/03/8e12bbd5-bb82-11e2-8a8e-0291187978f3/30475883-2-440-overview-1.gif"  class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>Philips Digital Camera</h3>
+                <div class="label">$90</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="refrigerator">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4980/4980442_sd.jpg;maxHeight=550;maxWidth=642" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>French Door<br>
+                    Refrigerator</h3>
+                <div class="label">$1900</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="speaker">
+                <img src="https://images.crutchfieldonline.com/ImageHandler/trim/620/378/products/2016/4/091/g091ES165X2-F.jpg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>Focal ES 165KX2</h3>
+                <div class="label">$1299</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product" id="headphones">
+                <img src="https://s3.nhattao.com/users/2016/12/7553667_f6a08f089bd30aed1932932344979d19.jpg" class="image-product">
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h3>BEATS SOLO</h3>
+                <div class="discount">-45%</div>
+                <div class="label">$299</div>
+                <button type="button" class="btn btn-success">ADD TO CART</button>
+                <button type="button" class="btn btn-success">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="aside">
+        <button type="button" class="btn btn-primary btn-lg">CATEGORY</button>
+        <div class="checkbox">
+            <ul  style="list-style-type: none">
+                <li>
+                   <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..." >
+                        Mobile Phones (341)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Smartphones (55)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Communicators (24)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        CDMA Phones (14)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Accessories (83)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Chargers (8)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Memory Cards (6)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Protectors (12)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        Travelsim (5)
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg">BRAND</button>
+            <button type="button" class="btn btn-primary btn-lg">PRICE</button>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">70% Complete (success)</span>
+            </div>
+        </div>
+        <div>
+            <label for="from" style="margin-left: 10px;">From</label>
+            <input class="form-control form-control-sm" type="text">
+            <label for="to" style="margin-left: 10px;">To</label>
+            <input class="form-control form-control-sm" type="text">
+        </div >
+        <div class="ok-clear">
+            <button type="button" class="btn btn-success">OK</button>
+            <button type="button" class="btn btn-success">Clear</button>
+        </div>
+        <div class="colors">
+            <div class="color">
+                <div id="square1"></div>
+                <div id="square2"></div>
+                <div id="square3"></div>
+                <div id="square4"></div>
+            </div>
+            <div class="color">
+                <div id="square5"></div>
+                <div id="square6"></div>
+                <div id="square7"></div>
+                <div id="square8"></div>
+            </div>
+            <div class="color">
+                <div id="square9"></div>
+                <div id="square10"></div>
+                <div id="square11"></div>
+                <div id="square12"></div>
+            </div>
+        </div>
+        <div class="size-w-p">
+            <button type="button" class="btn btn-primary btn-lg">SIZE</button>
+            <button type="button" class="btn btn-primary btn-lg">WEIGHT</button>
+            <button type="button" class="btn btn-primary btn-lg last">PROCESSOR</button>
+        </div>   
+        <h2 id="featured">FEATURED</h2>
+        <div class="toparrow">
+            <button type="button" class="btn btn-primary btn-sm">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-sm">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/B1/MB112/MB112?wid=572&hei=572&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=KKHk93" class="sideimage">
+        <div class="sideproduct">
+            <h4>White Apple Mouse</h4>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            <h4 style="color: red">$40</h4>
+        </div>
+        <div class="discountbox">
+           <h1 style="font-size: 66px"><strong>SALE</strong></h1>
+            <h3 style="color: darkgrey">Many items</h3>
+            <h1 style="color: forestgreen">40% OFF</h1>
+            <p style="color: grey">Discounts are sunject to all kinds of electronics except smartphones</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer1">
+    <div class="textfooter1">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <h6>7 days ago</h6>
+    </div>
+    <div class="arrow">
+        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="account">
+        <ul><h4>My Account</h4>
+            <li>My account</li>
+            <li>Personal information</li>
+            <li>Addresses</li>
+            <li>Discount</li>
+            <li>Orders history</li>
+            <li>Your vouchers</li>
+        </ul>
+    </div>
+    <div class="account">
+        <ul><h4>Information</h4>
+            <li>Top sellers</li>
+            <li>Specials</li>
+            <li>Manufacturers</li>
+            <li>Suppliers</li>
+            <li>Orders history</li>
+            <li>YOur stores</li>
+        </ul>
+    </div>
+    <div class="account">
+        <ul><h4>Contact Information</h4>
+            <li>VENEDOR LTD</li>
+            <li>United Kingdom</li>
+            <li>Greater London</li>
+            <li>London 02587</li>
+            <li>Oxford Street 48/188</li>
+            <li>Working days: Mon - Sun</li>
+        </ul>
+    </div>
+    <div class="account">
+        FACEBOOK
+        <img style="-webkit-user-select: none; background-color: inherit; cursor: zoom-in;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Facebook_Thumb_icon.svg/1200px-Facebook_Thumb_icon.svg.png" width="80px" height="40px">
+        <p> 1452 people like
+        <span> <a href="#" style="color: green"> PromoKit</a></span>
+        </p>
+        <div class="picturestop">
+            <div class="pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png">
+                <p style="font-size: 10px">Gulzat K</p>
+            </div>
+            <div class="pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png">
+                <p style="font-size: 10px">Ayday D</p>
+            </div>
+            <div class="pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png">
+                <p style="font-size: 10px">Zarina O</p>
+            </div>
+        </div>
+        <div class="picturesbottom">
+            <div class="pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png">
+                <p style="font-size: 10px">Marat G</p>
+            </div>
+            <div class="pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png">
+                <p style="font-size: 10px">Lily Kan</p>
+            </div>
+            <div class="pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png">
+                <p style="font-size: 10px">Ulan R</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer3">
+    <div class="socialmedia">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqAcQLomUdgFgkoSxmzhnnKsKMrdWGF_ZtNFcxJqXEHUlOAjJJ" width="50px" height="45px">
+        <img src="https://image.freepik.com/free-icon/twitter-logo-with-rounded-corners_318-708.jpg" width="50px" height="45px">
+        <img src="http://img.freepik.com/free-icon/linkedin-logo_318-76861.jpg?size=338c&amp;ext=jpg" width="50px" height="45px">
+        <img src="http://joeastray.com/wp-content/uploads/2014/09/instagram.png" width="55px" height="55px">
+        <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/sites/2/2015/02/twitter-logo-white-on-black.png" width="50px" height="45px">
+        <img src="http://joeastray.com/wp-content/uploads/2014/09/soundcloud.png" width="60px" height="65px">
+    </div>
+    <div class="footertext">
+        <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true">2012 Powered by WooCommerce. All rights reserved</span>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<!-- Please do not change this code it's for only Marat.... -->
+
+Testing code here.... U should able to see this code.
+
+</body>
+
+</html>
+
+
+
+
